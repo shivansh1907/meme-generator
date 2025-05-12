@@ -33,13 +33,13 @@ export  default function Main1(){
 
         function handleclick(){
 
-            const randomnumber=Math.floor(Math.random()*allmemes.length)
-            const newmemeurl= allmemes[randomnumber].url
-            setmeme(prevmeme=>({
-                ...prevmeme,
-                imageurl:newmemeurl
-
-            }));
+           const randomnumber =Math.floor(Math.random()*allmemes.length)
+           const randomurl=allmemes[randomnumber].url
+           setmeme(prevmeme=>({
+            ...prevmeme,
+            imageurl:randomurl
+           }))
+        
         }
 
 
